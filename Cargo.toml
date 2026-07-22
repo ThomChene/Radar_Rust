@@ -1,0 +1,11 @@
+[package]
+name = "radar_and_tomography"
+version = "0.1.0"
+edition = "2024"
+readme = "README.md"
+
+[dependencies]
+matrix = "0.22.0"
+geo = "0.33.1"
+rufft = "0.2.1"
+plotters = "0.3.7"
