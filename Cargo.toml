@@ -5,7 +5,9 @@ edition = "2024"
 readme = "README.md"
 
 [dependencies]
-matrix = "0.22.0"
-geo = "0.33.1"
 rufft = "0.2.1"
 plotters = "0.3.7"
+ndarray = "0.17.2"
+
+[features]
+f32=[]
