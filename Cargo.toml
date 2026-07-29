@@ -10,4 +10,3 @@ plotters = "0.3.7"
 ndarray = "0.17.2"
 
 [features]
-f32=[]
