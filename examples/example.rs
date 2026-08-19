@@ -39,6 +39,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             .style_func(&|&v| (VulcanoHSL::get_color(v / 5.0)).into()),
         )?;
 
+        chart
+        .draw_series(LineSeries::new(
+            (-15..15)
+                .map(|y| y as f64 / 40.0)
+                .map(|y| ((y * 10.0).sin(), y, (y * 10.0).cos())),
+            &BLACK,
+        ))?
+        .label("Line")
+        .legend(|(x, y)| PathElement::new(vec![(x, y), (x + 20, y)], BLACK));
+
+
         root.present()?;
     }
 
